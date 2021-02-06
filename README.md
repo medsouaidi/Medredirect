@@ -1,6 +1,6 @@
 # Medredirect
 
-Meddirect is a script based on python3, filter ip's and block them after many times access for 12h with filter country who have access to the Server
+Meddirect is a script based on python3, filter ip's with country Names and block them after many times access for 12h.
 
 ### Installation
 
