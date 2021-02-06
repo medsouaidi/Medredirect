@@ -43,8 +43,8 @@ Out server address in your preferred browser.
 http://DOMAIN.COM/goto?href=http://google.com/&contry=MA
 ```
 ```sh
-$ href = http://google.com / #REPLACE GOOGLE TO YOUR OFFRE CPA OR REDIRECT
-$ Contry = MA / #REPLACE MA TO CONTRY WANNA ACCESS TO OFFRE CPA
+Params : href = http://google.com / #REPLACE GOOGLE TO YOUR OFFRE CPA OR REDIRECT
+Params Contry = MA / #REPLACE MA TO CONTRY WANNA ACCESS TO OFFRE CPA
 ```
 
 To run server using port HTTPS and many times is 5 :
