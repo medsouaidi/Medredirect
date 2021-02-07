@@ -1,8 +1,8 @@
 #!/usr/bin/python
-import sqlite3,os,sys
+import sqlite3,os,sys,requests
 from datetime import datetime, timedelta
 from flask import Flask, escape, request, jsonify
-from ip2geotools.databases.noncommercial import DbIpCity
+# ~ from ip2geotools.databases.noncommercial import DbIpCity
 # ~ from flask_ipban import IpBan
 
 app = Flask(__name__)
@@ -80,10 +80,11 @@ def check(ips):
 # ~ HOME PAGE 
 @app.route("/", methods=["GET"])
 def home():
-	
+		
 	return ''' 
 	
 	Powered by msouaidi.site @M0H4MM33D
+	
 	'''
 
 
@@ -105,19 +106,21 @@ def get_my_ip():
 		contry = request.args['contry']
 
 	except:
-		return ''' PROBLEM IN REQUEST .. please back ''', 200
+		return ''' PROBLEM IN REQUEST .. please back ''', 404
 	
-	info = DbIpCity.get(ips, api_key='free')
+	# ~ info = DbIpCity.get(ips, api_key='free')
+	
+	ipinfo = requests.get("http://ip-api.com/json/"+ ips +"?fields=countryCode").json()["countryCode"]
 	
 	
-	if info.country == contry:
+	if str(ipinfo) == contry:
 		
 		
 		return '''
 		
 		<html>
 		<head>
-		<title>Redirection en HTML</title>
+		<title>Redirect..</title>
 		<meta http-equiv="refresh" content="0; URL={}">
 		</head>
 
