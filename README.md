@@ -18,7 +18,6 @@ Install modules ...
 
 ```sh
 $ pip3 install flask
-$ pip3 install ip2geotools
 ```
 
 Download script ...
