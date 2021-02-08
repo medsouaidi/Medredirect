@@ -6,7 +6,7 @@ Meddirect is a script based on python3, filter ip's with country Names and block
 
 Medredirect requires [python](https://fr.wikipedia.org/wiki/Python_(langage)) v3 to run.
 
-Install python & pip git.
+Install python & pip and git.
 
 ```sh
 $ sudo apt install python3
