@@ -32,7 +32,10 @@ Install script ...
 ```sh
 $ sudo bash ./install.sh 
 ```
-
+Removing script ...
+```sh
+$ sudo bash ./removing.sh
+```
 
 ### Run server
 
