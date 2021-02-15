@@ -120,14 +120,11 @@ def get_my_ip():
 		
 		<html>
 		<head>
-		<title>Redirect..</title>
+		<title>..</title>
 		<meta http-equiv="refresh" content="0; URL={}">
 		</head>
 
-		<body>
-		
-		<span>GOTO: {}, IP TIMES: {}</span>
-		
+		<body>		
 		</body>
 
 		</html>'''.format(redirect,redirect,check(ips))
